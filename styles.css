@@ -1,0 +1,331 @@
+body {
+    background: #2E2E40;
+}
+
+header {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.iconify {
+    width: 41px;
+    height: 41px;
+}
+
+.github {
+    position: absolute;
+    margin: auto;
+    right: 160px;
+    top: 53px;
+}
+
+.twitter {
+    position: absolute;
+    right: 110px;
+    top: 53px;
+}
+
+.instagram {
+    position: absolute;
+    right: 60px;
+    top: 53px; 
+}
+
+
+.social {
+    list-style: none;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.circle_image_large {
+    position: absolute;
+    width: 397px;
+    height: 397px;
+    right: 20%;
+    top: 150px;
+
+}
+
+.circle_image_small {
+    display: none;
+}
+
+.name {
+    position: relative;
+    width: 626px;
+    height: 145px;
+    left: 15%;
+    top: 225px;
+
+    font-family: Kaushan Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    line-height: 145px;
+
+    color: #FFF3F3;
+}
+
+.nav {
+    margin-top: 225px;
+    margin-left: 10%;
+}
+
+.nav__item {
+    display: inline-block;
+    position: relative;
+    margin-left: 80px;
+    width: 106px;
+    height: 42px;
+
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+}
+
+.nav__item::before {
+    content: '';
+    position: absolute;
+    transform: scaleX(0);
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav__item:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.sidebar {
+    display: none;
+}
+
+@media (max-width: 1525px) {
+    .circle_image_large {
+        position: absolute;
+        max-width: 50%;
+        max-height: 50%;;
+        width: 50%;
+        height: auto;
+        left: 55%;
+        top: 150px;
+    
+    }
+
+    .name {
+        position: relative;
+        width: 626px;
+        height: 145px;
+        left: 10%;
+        top: 225px;
+    
+        font-family: Kaushan Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 145px;
+    
+        color: #FFF3F3;
+    }
+
+    .nav__item {
+        display: inline-block;
+        position: relative;
+        margin-left: 40px;
+        width: 106px;
+        height: 42px;
+    
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 42px;
+    
+        color: #FFFFFF;
+    }
+
+    .nav {
+        margin-top: 225px;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .name {
+        left: 5%;
+        top: -40px;
+
+        font-size: 27pt;
+    }
+
+    .circle_image_large {
+        display: none;
+    }
+
+    .circle_image_small {
+
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .social_bar {
+        display: flex;
+    }
+
+    .iconify {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .github {
+        position: absolute;
+        
+        top: 450px;
+        left: 21%;
+    }
+    
+    .twitter {
+        position: absolute;
+        
+        top: 450px;
+        left: 41%;
+    }
+    
+    .instagram {
+        position: absolute;
+        
+        top: 450px;
+        left: 61%;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .side a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .side {
+        list-style: none;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        
+        top: 50px;
+
+        font-size: 25pt;
+        text-align: right;
+        font-family: Work Sans;;
+        line-height: 2.5; 
+    }
+}
+
+@media (max-width: 400px) {    
+    .name {
+        left: 30px;
+        top: -40px;
+
+        font-size: 27pt;
+    }
+
+    .circle_image_large {
+        display: none;
+    }
+
+    .circle_image_small {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .social {
+        display: block;
+        margin: auto;
+    }
+
+    .iconify {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .github {
+        position: absolute;
+        
+        top: 400px;
+        left: 10%;
+    }
+    
+    .instagram {
+        position: absolute;
+
+        top: 400px;
+        left: 40%;
+    }
+
+    .twitter {
+        position: absolute;
+        
+        top: 400px;
+        left: 70%;
+    }
+    
+    .sidebar {
+        display: none;
+    }
+
+    .side a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .side {
+        list-style: none;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+        
+        top: 50px;
+
+        font-size: 25pt;
+        text-align: right;
+        font-family: Work Sans;;
+        line-height: 2.5; 
+    }
+
+}
