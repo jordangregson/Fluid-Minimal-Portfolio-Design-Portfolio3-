@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,46 @@
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <header>
-    <nav class="social_bar_header">
-        <ul class="social">
-            <li class="github"><a href="#"><span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span></a></li>
-            <li class="instagram"><a href="#"><span class="iconify" data-icon="ant-design:instagram-outlined" data-inline="false"></span></a></li>
-            <li class="twitter"><a href="#"><span class="iconify" data-icon="ant-design:twitter-circle-filled" data-inline="false"></span></a></li>
-        </ul>
-    </nav>
+
+    <label for="dropdown_toggle" class="dropdown_toggle_label">
+        <span></span>
+    <div class="navbar_box"></div>
+
+    <input type="checkbox" id="dropdown_toggle" class="dropdown_toggle" >
+
+        <nav class="dropdown">
+            <ul>
+                <li class="dropdown_item"><a href="#">About</a></li>
+                <li class="dropdown_item"><a href="#">Work</a></li>
+                <li class="dropdown_item"><a href="#">Contact</a></li>
+            </ul>
+    
+        </nav>
+
+        <nav class="social_bar_header">
+            <ul class="social">
+                <li class="github"><a href="#"><span class="iconify" data-icon="ant-design:github-filled"
+                            data-inline="false"></span></a></li>
+                <li class="instagram"><a href="#"><span class="iconify" data-icon="ant-design:instagram-outlined"
+                            data-inline="false"></span></a></li>
+                <li class="twitter"><a href="#"><span class="iconify" data-icon="ant-design:twitter-circle-filled"
+                            data-inline="false"></span></a></li>
+            </ul>
+        </nav>
+
+        
 
 </header>
 
-<body> 
+<body>
+    <div class="name-container">
+        <b class="name">Jordan Gregsons</b>
+    </div>
 
-    <b class="name">Jordan Gregsons</b>
-
-    
 
     <nav class="navbar">
         <ul class="nav">
@@ -36,22 +58,12 @@
     </nav>
 
 
-    <nav class="sidebar" >
-        <ul class="side">
-            <li class="sidebar__item"><a href="#">About</a></li>
-            <li class="sidebar__item"><a href="#">Work</a></li>
-            <li class="sidebar__item"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
     <div class="circle_image_large">
-        <img src="Mask Group.jpg">
+        <img class="profile_img" src="Mask Group.jpg">
     </div>
 
-    <div class="circle_image_small">
-        <img src="smaller photo 2.jpg">
-    </div>
-    
 
 </body>
+
 </html>

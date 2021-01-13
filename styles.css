@@ -7,6 +7,10 @@ header {
     margin-top: 20px;
 }
 
+.dropdown {
+    display: none;
+}
+
 .iconify {
     width: 41px;
     height: 41px;
@@ -15,19 +19,19 @@ header {
 .github {
     position: absolute;
     margin: auto;
-    right: 160px;
+    right: 300px;
     top: 53px;
 }
 
 .twitter {
     position: absolute;
-    right: 110px;
+    right: 250px;
     top: 53px;
 }
 
 .instagram {
     position: absolute;
-    right: 60px;
+    right: 200px;
     top: 53px; 
 }
 
@@ -50,30 +54,26 @@ header {
     text-decoration: none;
 }
 
-.circle_image_large {
+.profile_img {
     position: absolute;
-    width: 397px;
-    height: 397px;
-    right: 20%;
-    top: 150px;
+    width: 20vw;
+    height: 20vw;
+    right: 15vw;
+    top: 200px;
 
-}
-
-.circle_image_small {
-    display: none;
 }
 
 .name {
     position: relative;
-    width: 626px;
-    height: 145px;
+    width: 16vw;
+    height: 16vw;
     left: 15%;
     top: 225px;
 
     font-family: Kaushan Script;
     font-style: normal;
     font-weight: normal;
-    font-size: 90px;
+    font-size: 7vw;
     line-height: 145px;
 
     color: #FFF3F3;
@@ -87,14 +87,14 @@ header {
 .nav__item {
     display: inline-block;
     position: relative;
-    margin-left: 80px;
+    margin-left: 7vw;
     width: 106px;
     height: 42px;
 
     font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 2em;
     line-height: 42px;
 
     color: #FFFFFF;
@@ -122,204 +122,113 @@ header {
     display: none;
 }
 
-@media (max-width: 1525px) {
+@media (max-width: 800px) {
+    .profile_img {
+        
+
+        width: 200px;
+        height: 200px;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        top: 125px;
+    }
+
     .circle_image_large {
-        position: absolute;
-        max-width: 50%;
-        max-height: 50%;;
+        margin-left: auto;
+        margin-right: auto;
         width: 50%;
-        height: auto;
-        left: 55%;
-        top: 150px;
-    
+    }
+
+    .name-container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     .name {
+        text-align: center;
         position: relative;
-        width: 626px;
-        height: 145px;
-        left: 10%;
-        top: 225px;
-    
+        top: 300px;
+
         font-family: Kaushan Script;
         font-style: normal;
         font-weight: normal;
-        font-size: 70px;
+        font-size: vw;
         line-height: 145px;
-    
-        color: #FFF3F3;
-    }
-
-    .nav__item {
-        display: inline-block;
-        position: relative;
-        margin-left: 40px;
-        width: 106px;
-        height: 42px;
-    
-        font-family: Work Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 42px;
-    
-        color: #FFFFFF;
-    }
-
-    .nav {
-        margin-top: 225px;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 1050px) {
-    .name {
-        left: 5%;
-        top: -40px;
-
-        background-color: orange;
-        font-size: 27pt;
-    }
-
-    .circle_image_large {
-        display: none;
-    }
-
-    .circle_image_small {
-
-
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .social_bar {
-
-    }
-
-    .iconify {
-        width: 90px;
-        height: 90px;
-    }
-    
-    .github {
-        position: absolute;
-        
-        top: 80%;
-        left: 21%;
-    }
-    
-    .twitter {
-        position: absolute;
-        
-        top: 80%;
-        left: 41%;
-    }
-    
-    .instagram {
-        position: absolute;
-        
-        top: 80%;
-        left: 61%;
-    }
-
-    .sidebar {
-        background-color: red;
-        display: grid;
-        margin-top: -10%;
-         
-    }
-
-    .side a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .sidebar li {
-        list-style: none;
-        line-height: 2em;
-        font-family: Work Sans;
-        font-size: 2em;
-    }
-
-@media (max-width: 400px) {    
-    .name {
-        left: 30px;
-        top: -40px;
-
-        font-size: 27pt;
-    }
-
-    .circle_image_large {
-        display: none;
-    }
-
-    .circle_image_small {
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav {
-        display: none;
     }
 
     .social {
-        display: block;
-        margin: auto;
-    }
-
-    .iconify {
-        width: 75px;
-        height: 75px;
-    }
-    
-    .github {
-        position: absolute;
-        
-        top: 400px;
-        left: 10%;
-    }
-    
-    .instagram {
-        position: absolute;
-
-        top: 400px;
-        left: 40%;
-    }
-
-    .twitter {
-        position: absolute;
-        
-        top: 400px;
-        left: 70%;
-    }
-    
-    .sidebar {
         display: none;
     }
 
-    .side a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .side {
-        list-style: none;
-    }
-
-    .sidebar {
+    .navbar {
         display: none;
-        position: absolute;
-        
-        top: 50px;
+    }
 
+    .dropdown {
+        display: none;
+        margin-top: 17px;
+		background-color: #FF9A52;
+		width: 100%;
+	}
+
+	.dropdown li {
+		margin-left: 1em;
+		list-style: none;
         font-size: 25pt;
-        text-align: right;
-        font-family: Work Sans;;
-        line-height: 2.5; 
-    }
+        width: 250px;
+		font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+		line-height: 2;
+	}
 
+	.dropdown a {
+		display: fixed;
+        margin-left: 10px;
+		text-decoration: none;
+		color: white;
+	}
+
+	.dropdown_toggle:checked ~ .dropdown {
+        display: flex;
+        
+		}
+
+	.dropdown_toggle {
+		display: none;
+	}
+
+	.dropdown_toggle_label {
+		position: absolute;
+		top: 10px;
+        bottom: 0;
+        left: 10px;
+		margin: 20px;
+		align-content: center;
+	}
+	
+	.dropdown_toggle_label span,
+	.dropdown_toggle_label span::before,
+	.dropdown_toggle_label span::after {
+		display: block;
+		background: white;
+		height: 4px;
+		width: 2em;
+        position: relative;
+	}
+
+	.dropdown_toggle_label span::before,
+	.dropdown_toggle_label span::after {
+		content: "";
+		position: absolute;
+	}
+
+	.dropdown_toggle_label span::before {
+		bottom: 10px;
+	}
+
+	.dropdown_toggle_label span::after {
+		top: 10px;
+    }
 }
